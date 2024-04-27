@@ -1,0 +1,246 @@
+.header-ad {
+    padding: 0 2em;
+    /* background: #ccc; */
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 80%;
+    height: 5em;
+    z-index: 222;
+    margin-left: 20em;
+    border-bottom: 1px solid #ccc;
+}
+
+.container-ad {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5em;
+}
+
+.navbar-ad {
+    width: 18em;
+    height: 96vh;
+    /* background: #3E3E45; */
+    /* margin-top: -5em; */
+    position: fixed;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 58%);
+    margin: 1em;
+    border-radius: 1em;
+    margin-top: -4em;
+    background-image: linear-gradient(195deg, #42424a 0%, #191919 100%);
+}
+
+.navbar-ad ul {
+    padding: 2em;
+}
+
+.navbar-ad ul li {
+    border: none !important;
+    font-family: unset !important;
+    /* font-style: revert; */
+    text-transform: none !important;
+    padding: 0.5em !important;
+    margin: 0 !important;
+}
+
+.navbar-ad ul li svg {
+    width: 1em;
+    height: 1em;
+    /* padding-right: 1em; */
+    margin-right: 0.5em;
+}
+
+.navbar-ad ul li button {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    text-align-last: left;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: #90ee907d;
+}
+
+.content-ad {
+    margin: 2em 2em 2em 20em;
+}
+
+.content-ad table {}
+
+.content-ad table tr th {}
+
+.content-ad table tr th.id {
+    width: 4em;
+}
+
+.content-ad table tr th.rate {
+    width: 8em;
+}
+
+.content-ad table tr th.name {
+    width: 25em;
+
+}
+
+.content-ad table .thin {}
+
+.content-ad table .big {}
+
+.content-ad table p {
+    color: #000000fb;
+}
+
+.content-ad table .bold {
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+/* modal detail */
+.modal-container,
+.content-modal {
+    box-shadow: none;
+    border: none;
+}
+
+.modal-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 3em;
+}
+
+.modal-container img {
+    width: 12em;
+    height: 16em;
+}
+
+.content-modal {
+    box-shadow: none;
+    padding: 1em;
+    width: 30em;
+    margin-top: -1em;
+    margin-left: 2em;
+}
+
+.content-modal p {}
+
+.content-modal input {
+    color: black;
+    border: none !important;
+    border-bottom: 1px solid #ccc !important;
+}
+
+
+.input-css {
+    position: relative;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+.input-css label {
+    padding-right: 0;
+    width: 5em;
+}
+
+.input-css input {
+    border: 0;
+    padding: 4px 0;
+    border-bottom: 1px solid lightgrey;
+    background-color: transparent;
+    color: #ff3e00;
+}
+
+.input-css input:focus {
+    outline: none;
+}
+
+.input-css input~span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #ff3e00;
+    transition: 0.4s;
+}
+
+.input-css input:focus~span {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.input-css input~p {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 9px;
+    transition: 0.3s;
+    z-index: -1;
+    letter-spacing: 0.5px;
+}
+
+.input-css input:focus~p,
+.input-css input:valid~p {
+    top: -16px;
+    font-size: 12px;
+    transition: 0.3s;
+    color: #ff3e00;
+}
+
+.input-css input:not(:focus)~p {
+    color: #aaa;
+}
+
+.modal-content-admin {
+    background-color: #fff;
+    /* padding: 20px; */
+    border-radius: 8px;
+    max-width: 75em;
+    border: 4px solid #fff;
+    height: 40em;
+    width: 75em;
+    position: relative;
+}
+.episodes-box {
+    width: 23em;
+    margin-left: 2em;
+    overflow-y: scroll;
+    height: 30em;
+}
+.episodes-box li{
+    margin-bottom: 1em;
+    border-bottom: 1px solid #000;
+    padding-bottom: 1em;
+}
+.p-episodes {
+    font-size: 1.2em;
+    color: #000;
+    font-weight: 900;
+}
+.submid-admin {
+    position: absolute;
+    right: 0;
+    right: 3em;
+    bottom: 1em;
+}
+.list-movie {
+    /* height: 87vh; */
+    /* overflow-y: scroll; */
+    padding: 2em;
+    background: #fff;
+    border-radius: 1em;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 38%), 0 2px 4px -1px rgb(0 0 0 / 31%);
+}
+/* header */
+.user-btn {
+    height: 3em;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 1em;
+    margin-top: 1em;
+}
+.content-ad table, .content-ad table th, .content-ad table td {
+    border: none !important;
+    border-bottom: 1px solid #cccccc91 !important;
+}

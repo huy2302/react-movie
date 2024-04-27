@@ -1,0 +1,554 @@
+.movie_nonactive {
+    display: none;
+}
+
+/* youtube trailer */
+.fancybox-skin {
+    padding: 0 !important;
+}
+
+.fancybox-nav.fancybox-prev,
+.fancybox-nav.fancybox-next {
+    display: none !important;
+}
+
+.fancybox-inner {
+    width: 100% !important;
+    height: 40em !important;
+}
+
+.fancybox-wrap.fancybox-desktop.fancybox-type-iframe.fancybox-opened {
+    width: 70em !important;
+    height: auto;
+    position: absolute;
+    top: 2em !important;
+    left: 15em !important;
+    opacity: 5;
+    overflow: visible;
+}
+
+.ytp-show-cards-title {
+    display: none !important;
+}
+
+.ytp-youtube-button.ytp-button.yt-uix-sessionlink {
+    display: none !important;
+}
+
+.fancybox-overlay.fancybox-overlay-fixed {
+    z-index: 1000000 !important;
+}
+
+.img-avt {
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.dropdownhover-bottom li a {
+    padding: 10px 30px !important;
+    color: #020d18 !important;
+}
+
+.dropdownhover-bottom {
+    right: 1em !important;
+    left: auto !important;
+    top: 7em !important;
+}
+
+.btn-hide {
+    display: none;
+}
+
+/* Thêm CSS vào file CSS của bạn hoặc sử dụng inline style trong React */
+.react-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Màu nền với độ mờ 0.3 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0; */
+    /* Bắt đầu với opacity là 0 để tạo hiệu ứng mờ dần */
+    transition: opacity 1.5s ease-in-out;
+    z-index: 9999;
+}
+
+.react-modal-content {
+    background-color: #fff;
+    /* padding: 20px; */
+    border-radius: 8px;
+    max-width: 70em;
+    border: 4px solid #fff;
+    height: 40em;
+    width: 70em;
+}
+
+.react-modal-content iframe {
+    border-radius: 5px;
+}
+
+.react-modal-overlay.react-modal-overlay-appear,
+.react-modal-overlay.react-modal-overlay-enter {
+    opacity: 0;
+    /* Khi modal xuất hiện hoặc enter, bắt đầu với opacity là 0 */
+}
+
+.react-modal-overlay.react-modal-overlay-appear-active,
+.react-modal-overlay.react-modal-overlay-enter-active {
+    opacity: 1;
+    /* Khi modal xuất hiện hoặc enter, kết thúc với opacity là 1 */
+}
+
+.react-modal-overlay.react-modal-overlay-exit {
+    opacity: 1;
+    /* Khi modal ẩn đi hoặc exit, bắt đầu với opacity là 1 */
+}
+
+.react-modal-overlay.react-modal-overlay-exit-active {
+    opacity: 0;
+    /* Khi modal ẩn đi hoặc exit, kết thúc với opacity là 0 */
+}
+
+.number-series {
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    color: #fff;
+}
+.number-views {
+    position: absolute;
+    top: 0.5em;
+    left: 1em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.number-views p {
+    padding-left: 0.5em;
+}
+.number-series p, .number-views p {
+    color: #fff;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.137);
+    box-shadow: 0px 0px 9px 8px rgba(0, 0, 0, 0.137);
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em 1em;
+    font-weight: 600;
+    color: #000;
+    font-size: 1.2em;
+    border: none;
+    background: #fff;
+}
+
+.close-btn:hover {
+    background-color: #ccc;
+    transition: 0.2s ease-in;
+}
+
+.login-content {
+    position: relative;
+}
+
+.login-btn {
+    background: none !important;
+    color: #abb7c4 !important;
+    border: none !important;
+    /* text-transform: uppercase; */
+}
+
+.drop-menu-grid {
+    position: absolute;
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 30em;
+    width: 30em;
+    background: #ccc;
+}
+
+.droptogger:hover+.drop-menu-grid {
+    display: grid;
+}
+
+.pd-10 {
+    padding: 10em;
+}
+
+.level1 {
+    display: block !important;
+}
+
+.banner {
+    position: relative;
+    height: 700px;
+    border-radius: 24px;
+    overflow: hidden;
+    height: 550px;
+    margin-bottom: 3em;
+}
+
+.banner .banner-slider {}
+
+.banner .img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .banner-slider .slider-item {
+    position: absolute;
+    top: 0;
+    left: 120%;
+    width: 100%;
+    height: 100%;
+    background-color: #313036;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 500ms ease;
+}
+
+.banner .banner-slider .active {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.banner .banner-slider .active::before {
+    --banner-overlay: 90deg, hsl(220, 17%, 7%) 0%, hsla(220, 17%, 7%, 0) 100%;
+    --fs-heading: 5.4rem;
+}
+
+.banner .banner-slider .slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-slider .slider-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(90deg, hsl(220, 17%, 7%) 0%, hsla(220, 17%, 7%, 0) 100%);
+}
+
+.banner .banner-slider .slider-item .banner-content {
+    /* left: 8em; */
+    position: absolute;
+    /* bottom: 206px; */
+    z-index: 1;
+    width: 50%;
+    /* top: 0; */
+    color: #959499;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 50px;
+}
+
+.banner .banner-slider .slider-item .banner-content h2 {
+    -webkit-line-clamp: 3;
+    margin-block-end: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #fff;
+    font-size: 3.5em;
+    line-height: 1.2;
+}
+
+.banner .banner-slider .slider-item .meta-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.banner .banner-slider .slider-item .meta-list .meta-item {
+    display: flex;
+    font-size: 1.4em;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 15px;
+}
+
+.banner .banner-slider .slider-item .meta-list .card-badge {
+    background-color: #313036;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    padding-inline: 6px;
+    border-radius: 4px;
+}
+
+.banner .banner-slider .slider-item .genre {
+    font-size: 1.2em;
+}
+
+.banner .banner-slider .slider-item .banner-text {
+    font-size: 1.1em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    margin-block-end: 24px;
+    /* width: 50%; */
+}
+
+.banner .banner-slider .slider-item .banner-content a {
+    background-color: #db0028;
+    color: #FFF;
+    font-size: 1.5em;
+    font-weight: 700;
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-block: 12px;
+    padding-inline: 20px 24px;
+    border-radius: 8px;
+    transition: 250ms ease;
+}
+
+.banner .banner-slider .slider-item .banner-content svg {
+    width: 1.2em;
+    height: auto;
+}
+
+.banner .banner-slider .slider-item .banner-content span {
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+.banner .slider-control {
+    scrollbar-width: none;
+    left: calc(100% - 450px);
+    position: absolute;
+    bottom: 20px;
+    /* left: 20px; */
+    right: 0;
+    border-radius: 16px 0 0 16px;
+    user-select: none;
+    padding: 4px 0 4px 4px;
+    overflow-x: auto;
+}
+
+.banner .slider-control .control-inner {
+    display: flex;
+    gap: 12px;
+}
+
+.banner .slider-control .control-inner .poster-box {
+    background-image: url("https://flixxer.netlify.app/assets/images/poster-bg-icon.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    background-color: #313036;
+    /* border-radius: 16px; */
+    overflow: hidden;
+    border: none;
+    padding: 0;
+}
+
+.banner .slider-control .control-inner .slider-item {
+    width: 100px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    filter: brightness(0.4);
+    outline: none;
+}
+
+.banner .slider-control .control-inner .active {
+    filter: brightness(1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.75);
+}
+
+.banner .slider-control .control-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.load-more {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-block: 12px;
+    padding-inline: 20px 24px;
+    border-radius: 8px;
+    transition: 250ms ease;
+    background-color: #d82c4b;
+    margin-inline: auto;
+    outline: none;
+    border: none;
+}
+
+.regi-btn{
+    background-color: #dd003f !important;
+    color: #ffffff !important;
+    padding: 11px 25px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.regi-btn-submit {
+    background-color: #dd003f !important;
+    color: #ffffff !important;
+    padding: 11px 25px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+}
+.container-left {
+    width: 24%;
+    height: 100vh;
+}
+.page-single {
+    padding-top: 10em;
+    display: flex;
+    background: #0F1115;
+}
+.cate-list {
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-right: 1em;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+.cate-item {
+    margin-bottom: 1.2em;
+    transition: 0.2s ease;
+    border-bottom: 1px solid;
+}
+.cate-item > button {
+    font-family: "DM Sans", sans-serif;
+    background: none;
+    font-size: 16px;
+    text-decoration: auto;
+    margin: 0.1em 0;
+    border: none;
+    outline: none;
+    text-transform: uppercase !important;
+    color: #6f6f71;
+    font-weight: 500;
+    text-align: left;
+    -webkit-transition: all 0.2s ease-out;
+}
+.cate-item:hover > button {
+    color: #ffffff;
+}
+
+/* background header */
+.ht-header {
+    /* background-color: #000 !important; */
+}
+.content-col-12 {
+    background: #1a1820a6;
+    padding: 1.5em 2em;
+    border-radius: 24px;
+}
+.card-badge {
+    background-color: #313036;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-inline: 6px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#comment {
+    background: #3A3B3C;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    position: relative;
+    max-width: 100%;
+    overflow: auto;
+}
+.button-comment {
+    background: #0000;
+    border: none;
+    outline: none;
+    padding: 7px;
+    position: absolute;
+    right: 20px;
+}
+.button-comment svg { 
+    color: #74B5FF;
+    width: 1.3em;
+    display: block;
+    height: 1.3em;
+    transform: rotate(45deg);
+}
+.reply-comment {
+    font-style: italic;
+    background: none;
+    border: none;
+    outline: none;
+    color: #ccc;
+    font-size: 0.9em;
+}
+.reply-comment:hover {
+    text-decoration: underline;
+}
+.comment-content {
+    height: 50em;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+.button-evaluate {
+    color: #fff;
+    width: 11em;
+    display: block;
+    /* height: 1.3em; */
+    background: #847f3d;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin-left: 1em;
+}
+
+/* Định dạng cho button và hình ảnh */
+.btn-img {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-img img {
+    width: 4em;
+    height: 4em;
+}
+
+/* Hiển thị viền sáng khi được chọn */
+.selected-img {
+    border: 3px solid #fff;
+}
+.a-profile {
+    padding: 0 !important;
+}
